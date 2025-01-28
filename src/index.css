@@ -134,3 +134,35 @@ footer {
 .footer-bottom {
   background-color: #303030;
 }
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.btn {
+  background-color: transparent;
+  border: 3px solid #0282f9;
+  color: white;
+  text-transform: uppercase;
+  padding: 16px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.social h4 {
+  color: #0282f9;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.social .footer-nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
