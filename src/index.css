@@ -1,0 +1,52 @@
+/*-----------------
+    RESET
+------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------------
+    GENERAL
+------------------*/
+body {
+  font-family: "Open Sans", serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/*-----------------
+    HEADER
+------------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+}
+.header-nav li {
+  padding: 60px 0;
+}
+.active {
+  border-bottom: 6px solid #0282f9;
+}
+.active a {
+  color: #0282f9;
+}
