@@ -64,6 +64,9 @@ main {
 /*-----------------
     MAIN
 ------------------*/
+footer {
+  color: white;
+}
 
 .footer-top {
   background-color: #0282f9;
@@ -88,6 +91,45 @@ main {
   color: white;
   font-size: 14px;
   font-weight: 400;
+}
+
+.footer-center {
+  background-image: url("./img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-center .container {
+  display: flex;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  width: 40%;
+  padding: 40px;
+}
+
+.col {
+  width: calc(100% / 3);
+}
+.footer-nav ul {
+  list-style: none;
+}
+
+.col h3 {
+  padding: 14px 0;
+  text-transform: uppercase;
+}
+.footer-nav a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #808280;
+  font-size: 12px;
+}
+.logo-big {
+  background-image: url("./img/dc-logo-bg.png");
+  width: 60%;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .footer-bottom {
   background-color: #303030;
