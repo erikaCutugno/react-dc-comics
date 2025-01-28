@@ -1,3 +1,9 @@
 export default function Main() {
-  return <h1>Main</h1>;
+  return (
+    <main>
+      <div className="container">
+        <h1>--&gt; Content goes here &lt;--</h1>
+      </div>
+    </main>
+  );
 }
