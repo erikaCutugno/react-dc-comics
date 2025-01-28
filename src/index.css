@@ -60,3 +60,35 @@ main {
   color: white;
   padding: 60px 0;
 }
+
+/*-----------------
+    MAIN
+------------------*/
+
+.footer-top {
+  background-color: #0282f9;
+}
+
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: calc(100% / 5);
+}
+.card img {
+  max-width: 48px;
+}
+.card h3 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-bottom {
+  background-color: #303030;
+}
