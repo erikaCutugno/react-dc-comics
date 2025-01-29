@@ -98,10 +98,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.footer-center .container {
-  display: flex;
-  justify-content: space-between;
-}
+
 .row {
   display: flex;
   width: 40%;
@@ -127,7 +124,6 @@ footer {
 }
 .logo-big {
   background-image: url("./img/dc-logo-bg.png");
-  width: 60%;
   background-repeat: no-repeat;
   background-position: right;
 }
