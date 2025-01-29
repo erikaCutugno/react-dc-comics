@@ -41,6 +41,10 @@ header {
   font-weight: 500;
   font-size: 14px;
 }
+
+.header-nav a:hover {
+  color: #0282f9;
+}
 .header-nav li {
   padding: 60px 0;
 }
@@ -122,6 +126,11 @@ footer {
   color: #808280;
   font-size: 12px;
 }
+
+.footer-nav li:hover a {
+  color: white;
+  font-size: 14px;
+}
 .logo-big {
   background-image: url("./img/dc-logo-bg.png");
   background-repeat: no-repeat;
@@ -146,6 +155,11 @@ footer {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #0282f9;
+  transform: scale(1.1);
+}
+
 .social {
   display: flex;
   justify-content: space-between;
@@ -161,4 +175,10 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 16px;
+}
+
+.social .footer-nav img:hover {
+  transform: scale(1.1);
+  background-color: white;
+  border-radius: 100%;
 }
