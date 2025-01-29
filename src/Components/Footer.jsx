@@ -1,3 +1,4 @@
+import FooterTop from "./FooterTop";
 import footerColSx from "../data/footerColSx";
 import footerColRx from "../data/footerColRx";
 import iconsSocial from "../data/iconsSocial";
@@ -5,6 +6,7 @@ import iconsSocial from "../data/iconsSocial";
 export default function Footer() {
   return (
     <footer>
+      <FooterTop />
       <div className="footer-center">
         <div className="container logo-big">
           <div className="row">
