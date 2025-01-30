@@ -35,11 +35,15 @@ header .container {
   align-items: center;
 }
 
+.header-nav {
+  width: 70%;
+}
 .header-nav ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
-  gap: 16px;
+  gap: 14px;
 }
 
 .header-nav a {
@@ -80,7 +84,7 @@ header .container {
     MAIN PRODUCTS
 ------------------*/
 .main-products {
-  background-color: #303030;
+  background-color: #1c1c1c;
 }
 .main-products .container {
   position: relative;
@@ -98,7 +102,13 @@ header .container {
 }
 .col-comics {
   width: calc(100% / 6);
+  cursor: pointer;
   padding: 10px;
+}
+.col-comics:hover .card-comics {
+  opacity: 0.7;
+  transition: 0.5s;
+  transform: scale(0.9);
 }
 .card-comics {
   height: 200px;
@@ -151,14 +161,21 @@ footer {
 
 .footer-top .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 60px 40px;
+  row-gap: 16px;
 }
 .card {
   display: flex;
   align-items: center;
   gap: 8px;
   width: calc(100% / 5);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(0.9);
 }
 .card img {
   max-width: 48px;
@@ -178,12 +195,14 @@ footer {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   width: 40%;
   padding: 40px;
 }
 
 .col {
   width: calc(100% / 3);
+  padding: 0 8px;
 }
 .footer-nav ul {
   list-style: none;
@@ -237,6 +256,7 @@ footer {
 
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
@@ -256,4 +276,75 @@ footer {
   transform: scale(1.1);
   background-color: white;
   border-radius: 100%;
+}
+
+/*---MEDIUM-----*/
+
+@media screen and (max-width: 920px) {
+  .header-nav li {
+    padding: 2px 0;
+  }
+  .header-nav ul {
+    justify-content: flex-start;
+  }
+  .active {
+    border-bottom: 4px solid #0282f9;
+  }
+  .footer-top .container {
+    justify-content: flex-start;
+    padding: 40px 40px;
+  }
+  .col-comics {
+    width: calc(100% / 4);
+  }
+  .card {
+    width: calc(100% / 3);
+  }
+  .row {
+    width: 70%;
+  }
+}
+
+/*---SMALL-----*/
+@media screen and (max-width: 620px) {
+  .col-comics {
+    width: calc(100% / 3);
+  }
+  .card {
+    width: calc(100% / 2);
+  }
+  .row {
+    width: 80%;
+  }
+}
+/*---XS-----*/
+@media screen and (max-width: 540px) {
+  .col-comics {
+    width: calc(100% / 2);
+  }
+  .card {
+    width: calc(100% / 2);
+  }
+  .row {
+    width: 100%;
+  }
+  .logo-big {
+    background-position: center;
+  }
+  .social {
+    justify-content: center;
+  }
+}
+/*---XXS-----*/
+@media screen and (max-width: 400px) {
+  .col-comics {
+    width: calc(100% / 1);
+  }
+  .card {
+    width: calc(100% / 1);
+  }
+
+  .card-comics {
+    height: 360px;
+  }
 }
