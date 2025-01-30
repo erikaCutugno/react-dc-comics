@@ -56,17 +56,18 @@ header {
 }
 
 /*-----------------
-    MAIN
+    MAIN HERO
 ------------------*/
 
-main {
-  background-color: #1c1c1c;
-  color: white;
-  padding: 60px 0;
+.overflow {
+  height: 386px;
+  overflow: hidden;
 }
-
+.overflow img {
+  max-width: 100%;
+}
 /*-----------------
-    MAIN
+    FOOTER
 ------------------*/
 footer {
   color: white;
