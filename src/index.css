@@ -23,6 +23,13 @@ body {
     HEADER
 ------------------*/
 header {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,6 +37,7 @@ header {
 
 .header-nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   gap: 16px;
 }
@@ -65,6 +73,70 @@ header {
 }
 .overflow img {
   max-width: 100%;
+  min-height: 100%;
+}
+
+/*-----------------
+    MAIN PRODUCTS
+------------------*/
+.main-products {
+  background-color: #303030;
+}
+.main-products .container {
+  position: relative;
+  padding: 30px 0;
+}
+.main-products h5 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 8px 0;
+}
+.row-comics {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-comics {
+  width: calc(100% / 6);
+  padding: 10px;
+}
+.card-comics {
+  height: 200px;
+  overflow: hidden;
+}
+.col-comics img {
+  max-width: 100%;
+  min-height: 100%;
+}
+/*-----------------
+    MAIN BUTTON
+------------------*/
+.btn-primary {
+  padding: 12px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #0282f9;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-primary:hover {
+  background-color: #083763;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.btn-load {
+  text-align: center;
+}
+.btn-up {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+.btn-down {
+  margin: 20px auto;
 }
 /*-----------------
     FOOTER
@@ -153,12 +225,14 @@ footer {
   text-transform: uppercase;
   padding: 16px;
   font-size: 18px;
+  transition: 0.5s;
   cursor: pointer;
 }
 
 .btn:hover {
   background-color: #0282f9;
   transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .social {
