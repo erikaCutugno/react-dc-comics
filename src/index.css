@@ -202,7 +202,7 @@ footer {
 
 .col {
   width: calc(100% / 3);
-  padding: 0 8px;
+  padding: 0 10px;
 }
 .footer-nav ul {
   list-style: none;
@@ -221,7 +221,9 @@ footer {
 
 .footer-nav li:hover a {
   color: white;
-  font-size: 14px;
+}
+.footer-nav li:hover {
+  transform: scale(1.1);
 }
 .logo-big {
   background-image: url("./img/dc-logo-bg.png");
